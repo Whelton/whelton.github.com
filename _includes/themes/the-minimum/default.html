@@ -9,29 +9,39 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+	<link href='{{ ASSET_PATH }}/css/whelton.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
 
 <div id="page" class="hentry">
-	<header class="the-header">
-		<div class="unit-head">
-			<div class="unit-inner unit-head-inner">
-				<p class="logo"><a href="{{ HOME_PATH }}">{{ site.title }}</a></p>
-				<nav class="nav-global">
-					<ul>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="forkme"><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-								allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></li>
-					</ul>
-				</nav>
-			</div><!-- unit-inner -->
-		</div><!-- unit-head -->
+
+	
+	<header class="landing">
+		
+		<img class="avatar"/>
+	
+		<h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+		
+		<p>Entrepreneur, hacker & developer. Co-founder of <a href="http://coderdojo.com">CoderDojo</a>, founder & president of the <a href="http://hwf.io">Hello World Foundation</a>, Polaris Ventures' <a href="http://polarispartners.com/team/member/james-whelton/">Entrepreneur of Residence</a>. 2013 Forbes 30 under 30. Living between Boston, MA, USA & Dublin, Ireland.</p>
+		
+		<nav class="contact">
+			
+			<p class="email">james@whelton.io</p>
+			
+			<ul>
+				<li><a href="http://twitter.com/Whelton">&#62218;</a></li>
+				<li><a href="https://github.com/Whelton">&#62209;</a></li>
+				<li><a href="http://www.linkedin.com/in/killingit">&#62233;</a></li>
+				<li><a href="http://instagram.com/jwhelton">&#62253;</a></li>				
+			</ul>
+
+		</nav>
+		
 	</header>
+	
+	
 	<div class="body" role="main">
 		<div class="unit-body">
 			<div class="unit-inner unit-body-inner">
@@ -44,6 +54,7 @@
 	<footer class="the-footer">
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
+				
 				<div class="misc vcard">
 					<h4>about</h4>
 					<ul>
@@ -52,10 +63,23 @@
 						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
 						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
 					</ul>
+				</div>
+				
+				<div class="misc vcard">
+					<h4>get around</h4>
+					<ul>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+					</ul>
+					
 				</div><!-- misc -->
+				
 				<p class="licence">
-					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
-					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+					Theme hacked off: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.<br>
+					Uses <a href="http://entypo.com">Entypo & Entypo Social font</a>.
 				</p>
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
